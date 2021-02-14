@@ -1923,6 +1923,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 91926591}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &131364149 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8542070226201145225, guid: 617a83b7dfbd19348b5d383fe1b3e644,
+    type: 3}
+  m_PrefabInstance: {fileID: 709221484}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb4c9e3126b05743ad9b60423a340c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &156434531
 Mesh:
   m_ObjectHideFlags: 0
@@ -4757,6 +4769,26 @@ PrefabInstance:
       propertyPath: lightDecay
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 3370588887052859188, guid: 617a83b7dfbd19348b5d383fe1b3e644,
+        type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 1472964908}
+    - target: {fileID: 3370588887052859188, guid: 617a83b7dfbd19348b5d383fe1b3e644,
+        type: 3}
+      propertyPath: ammoSlot
+      value: 
+      objectReference: {fileID: 131364149}
+    - target: {fileID: 3370588887052859188, guid: 617a83b7dfbd19348b5d383fe1b3e644,
+        type: 3}
+      propertyPath: ammoText
+      value: 
+      objectReference: {fileID: 792636517}
+    - target: {fileID: 3370588887052859188, guid: 617a83b7dfbd19348b5d383fe1b3e644,
+        type: 3}
+      propertyPath: shotAngle
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4321278700852922219, guid: 617a83b7dfbd19348b5d383fe1b3e644,
         type: 3}
       propertyPath: ammoText
@@ -4897,7 +4929,8 @@ PrefabInstance:
       propertyPath: playerCam
       value: 
       objectReference: {fileID: 1472964908}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4321278700852922219, guid: 617a83b7dfbd19348b5d383fe1b3e644, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 617a83b7dfbd19348b5d383fe1b3e644, type: 3}
 --- !u!43 &712044984
 Mesh:

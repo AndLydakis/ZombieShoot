@@ -13,7 +13,7 @@ public class FlashLight : MonoBehaviour
     [SerializeField] float defaultAngle = 70f;
     [SerializeField] TextMeshProUGUI flashlightText;
 
-    bool isOn = false;
+    bool isOn = true;
     Light self;
     void Start() {
         self = GetComponent<Light>();
@@ -26,10 +26,15 @@ public class FlashLight : MonoBehaviour
 
     void DecreaseIntensity() {
         self.intensity = Mathf.Max(minIntensity, self.intensity - lightDecay * Time.deltaTime);
-        Debug.Log(self.intensity);
     }
 
+    void Toggle() {
+        isOn = !isOn;
+        self.enabled = isOn;
+    }
     void Update() {
+        if (Input.GetKeyDown(KeyCode.F)) Toggle();
+        if (!isOn) return;
         DecreaseAngle();
         DecreaseIntensity();
         int percentage = (int)((self.intensity / defaultIntensity) * 100f);
